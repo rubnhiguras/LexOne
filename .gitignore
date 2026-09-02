@@ -1,0 +1,9 @@
+/node_modules
+/dist
+/www
+/.angular
+/android
+/ios
+.DS_Store
+*.log
+*.env

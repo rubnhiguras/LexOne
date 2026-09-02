@@ -1,0 +1,12 @@
+import type { CapacitorConfig } from '@capacitor/cli';
+
+const config: CapacitorConfig = {
+  appId: 'app.lexone.mobile',
+  appName: 'LexOne',
+  webDir: 'www',
+  server: {
+    androidScheme: 'https'
+  }
+};
+
+export default config;

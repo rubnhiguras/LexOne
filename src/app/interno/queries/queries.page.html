@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="tertiary">
+    <ion-title>Queries</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-item *ngFor="let q of queries" button (click)="abrir(q)">
+      <ion-label>
+        <h2>{{ q.cliente }}</h2>
+        <p>{{ q.asunto }}</p>
+      </ion-label>
+      <ion-badge [color]="q.estado === 'pendiente' ? 'warning' : 'success'">
+        {{ q.estado }}
+      </ion-badge>
+    </ion-item>
+  </ion-list>
+</ion-content>

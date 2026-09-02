@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>Master</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Bienvenido a LexOne</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Plantea tu consulta legal y un especialista te responderá lo antes posible.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-button expand="block" (click)="nuevaQuery()">
+    <ion-icon slot="start" name="chatbubble-ellipses-outline"></ion-icon>
+    Nueva query
+  </ion-button>
+</ion-content>

@@ -1,0 +1,18 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>FAQ</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" [fullscreen]="true">
+  <ion-accordion-group>
+    <ion-accordion *ngFor="let f of faqs; let i = index" [value]="'faq-' + i">
+      <ion-item slot="header" color="light">
+        <ion-label>{{ f.pregunta }}</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        {{ f.respuesta }}
+      </div>
+    </ion-accordion>
+  </ion-accordion-group>
+</ion-content>

@@ -1,0 +1,13 @@
+.login-wrap {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  text-align: center;
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+}

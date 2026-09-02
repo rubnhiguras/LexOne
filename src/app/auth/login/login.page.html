@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title class="lexone-logo">LexOne</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" [fullscreen]="true">
+  <div class="login-wrap">
+    <h1 class="lexone-logo">LexOne</h1>
+    <ion-text color="medium">
+      <p>Consultas legales, simples y directas.</p>
+    </ion-text>
+
+    <ion-button expand="block" color="primary" (click)="entrarComoCliente()">
+      <ion-icon slot="start" name="person-outline"></ion-icon>
+      Soy cliente
+    </ion-button>
+
+    <ion-button expand="block" fill="outline" color="tertiary" (click)="entrarComoInterno()">
+      <ion-icon slot="start" name="briefcase-outline"></ion-icon>
+      Acceso interno (despacho)
+    </ion-button>
+  </div>
+</ion-content>

@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="tertiary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/interno/queries"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Query #{{ queryId }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" [fullscreen]="true">
+  <ion-note>Detalle de la consulta del cliente (datos de ejemplo).</ion-note>
+
+  <ion-item lines="none">
+    <ion-label>
+      <ion-textarea
+        placeholder="Escribe tu respuesta para el cliente..."
+        [(ngModel)]="respuesta"
+        autoGrow="true">
+      </ion-textarea>
+    </ion-label>
+  </ion-item>
+
+  <ion-button expand="block" (click)="enviarRespuesta()">Enviar respuesta</ion-button>
+</ion-content>
