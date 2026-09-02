@@ -17,6 +17,7 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": "www",
+            "baseHref": "/LexOne/",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": ["zone.js"],
@@ -59,5 +60,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "52ae53fb-324e-487b-9bfc-8edc7f39c2ae"
   }
 }
