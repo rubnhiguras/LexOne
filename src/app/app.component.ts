@@ -11,7 +11,7 @@ import { version } from '../../package.json';
       <ion-router-outlet></ion-router-outlet>
 
       <footer class="app-footer">
-        LexOne · v{{ version }}
+        <i>&#169;</i> {{ currentYear }} LexOne · v{{ version }} 
       </footer>
     </ion-app>
   `,
@@ -29,4 +29,5 @@ import { version } from '../../package.json';
 })
 export class AppComponent {
   version = version;
+  currentYear = new Date().getFullYear();
 }
