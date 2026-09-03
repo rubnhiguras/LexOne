@@ -1,25 +1,26 @@
 {
   "name": "LexOne",
   "short_name": "LexOne",
+  "id": "/LexOne/",
   "description": "Consultas legales para clientes y despachos",
-  "theme_color": "#0B2545",
-  "background_color": "#0B2545",
+  "start_url": "/LexOne/",
+  "scope": "/LexOne/",
   "display": "standalone",
   "orientation": "portrait",
-  "scope": "./",
-  "start_url": "./",
+  "theme_color": "#0B2545",
+  "background_color": "#0B2545",
   "icons": [
     {
-      "src": "./assets/icon/icon-192.png",
+      "src": "/LexOne/assets/icon/icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
     },
     {
-      "src": "./assets/icon/icon-512.png",
+      "src": "/LexOne/assets/icon/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
     }
   ]
 }
