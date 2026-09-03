@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonApp, IonRouterOutlet } from '@ionic/angular/standalone';
-import { version } from '../../package.json';
+import { version, name } from '../../package.json';
 
 @Component({
   selector: 'app-root',
@@ -8,10 +8,9 @@ import { version } from '../../package.json';
   imports: [IonApp, IonRouterOutlet],
   template: `
     <ion-app>
-      <ion-router-outlet></ion-router-outlet>
-
+      <ion-router-outlet style="margin:1.5rem"></ion-router-outlet>
       <footer class="app-footer">
-        <i>&#169;</i> {{ currentYear }} LexOne · v{{ version }} 
+        <i>&#169;</i> {{ currentYear }} {{ name }} {{ version }} 
       </footer>
     </ion-app>
   `,
@@ -30,4 +29,5 @@ import { version } from '../../package.json';
 export class AppComponent {
   version = version;
   currentYear = new Date().getFullYear();
+  name = name
 }
